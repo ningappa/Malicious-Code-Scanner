@@ -63,7 +63,9 @@ class phpMalCodeScan {
 			foreach($this->infected_files as $inf) {
 				$message .= "  -  $inf \n";
 			}
-			mail(SEND_EMAIL_ALERTS_TO,'Malicious Code Found!',$message,'FROM:');
+			
+			print_r($message);
+			//mail(SEND_EMAIL_ALERTS_TO,'Malicious Code Found!',$message,'FROM:');
 		}
 	}
 
